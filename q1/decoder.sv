@@ -5,10 +5,7 @@ module decoder (
 
   always_comb begin
     one_hot = 16'b0;
-    if (binary < 16) begin
-      one_hot[binary] = 1'b1;
-    end
+    one_hot[binary] = 1'b1;
   end
-
 
 endmodule
